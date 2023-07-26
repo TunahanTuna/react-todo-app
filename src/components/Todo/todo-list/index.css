@@ -2,14 +2,22 @@
   display: flex;
   flex-direction: column;
   padding: 1em;
+  box-sizing: border-box;
 }
 
 .items {
   margin: 0.1em;
   font-size: 2rem;
+  flex: 2;
 }
 
 .input-container {
   display: flex;
+  flex-direction: row;
+  padding: 1em;
   justify-content: space-between;
+}
+
+.delete-button {
+  background-color: gray;
 }
