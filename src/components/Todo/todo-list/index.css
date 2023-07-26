@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.items {
+  margin: 0.1em;
+  font-size: 2rem;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
