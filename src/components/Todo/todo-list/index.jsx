@@ -17,7 +17,12 @@ function TodoList({ todos, setTodos }) {
         setFiltered={setFiltered}
         setTodos={setTodos}
       />
-      <Menu todos={todos} setTodos={setTodos} setFiltered={setFiltered} />
+      <Menu
+        todos={todos}
+        setTodos={setTodos}
+        setFiltered={setFiltered}
+        filtered={filtered}
+      />
     </div>
   );
 }
