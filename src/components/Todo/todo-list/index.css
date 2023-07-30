@@ -1,4 +1,4 @@
-.container {
+.container-list {
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -12,6 +12,13 @@
 }
 
 .input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+.input-items {
   display: flex;
   flex-direction: row;
   padding: 1em;

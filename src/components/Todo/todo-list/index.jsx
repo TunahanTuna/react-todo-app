@@ -11,17 +11,12 @@ function TodoList({ todos, setTodos }) {
     setFiltered(todos);
   }, [todos]);
   return (
-    <div className="container">
-      {filtered.map((todo, index) => (
-        <Input
-          key={`unique-${index}`}
-          item={todo}
-          setTodos={setTodos}
-          index={index}
-          todos={todos}
-          setFiltered={setFiltered}
-        />
-      ))}
+    <div className="container-list">
+      <Input
+        filtered={filtered}
+        setFiltered={setFiltered}
+        setTodos={setTodos}
+      />
       <Menu todos={todos} setTodos={setTodos} setFiltered={setFiltered} />
     </div>
   );
