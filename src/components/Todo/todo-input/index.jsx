@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { v4 as uuid } from "uuid";
 import "./index.css";
 export default function TodoInput({ setTodos, todos }) {
   const [value, setValue] = useState("");
@@ -8,7 +9,10 @@ export default function TodoInput({ setTodos, todos }) {
       if (e.target.value === "") {
         return;
       }
-      setTodos([...todos, { value: e.target.value, isDone: false }]);
+      setTodos([
+        ...todos,
+        { id: uuid(), value: e.target.value, isDone: false },
+      ]);
       e.target.value = "";
     }
   };

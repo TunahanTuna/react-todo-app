@@ -21,11 +21,11 @@ function Menu({ todos, setTodos, setFiltered, filtered }) {
       <button className="menu-button" name="all" onClick={onClick}>
         all
       </button>
+      <button className="menu-button" name="not" onClick={onClick}>
+        active
+      </button>
       <button className="menu-button" name="complated" onClick={onClick}>
         complated
-      </button>
-      <button className="menu-button" name="not" onClick={onClick}>
-        not complated
       </button>
     </div>
   );

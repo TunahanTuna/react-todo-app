@@ -10,14 +10,21 @@
   font-size: 2rem;
   flex: 2;
 }
-
+.complated {
+  text-decoration: line-through;
+}
 .input-container {
   display: flex;
   flex-direction: column;
   padding: 1em;
   justify-content: space-between;
 }
-
+.input-area {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  align-items: center;
+}
 .input-items {
   display: flex;
   flex-direction: row;
@@ -27,4 +34,7 @@
 
 .delete-button {
   background-color: gray;
+}
+.input-checkbox {
+  min-width: 25px;
 }
